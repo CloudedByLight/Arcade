@@ -5,9 +5,12 @@ import BoardSnake from "./snake/BoardSnake.js";
 const menuLines = document.getElementsByClassName("line");
 
 alert(
-  `My arcade is meant for PC, as game controls (such as Arrow Keys & MouseMove) are not supported on mobile devices.
+  `
+Hi !
+My arcade is meant for PCs only, as games functionality & controls (such as Arrow Keys & MouseMove) are not supported on mobile devices.
 
-  -Ralph :)`
+- Ralph :)
+`
 );
 
 for (let i = 0; i < menuLines.length - 1; i++) {
