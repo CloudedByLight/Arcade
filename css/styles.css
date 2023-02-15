@@ -5,8 +5,8 @@ body {
   color: white;
 }
 
-main {
-  height: 100%;
+/* main {
+  height: 95%;
   position: relative;
   font-family: courier;
   font-size: 7rem;
@@ -14,11 +14,22 @@ main {
   display: grid;
   grid-template-rows: 1fr min-content;
   place-items: center;
-  gap: 5%;
+  gap: 4%;
+} */
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: courier;
+  font-size: 7rem;
+  text-transform: uppercase;
 }
 
 .menu {
-  padding-top: 5%;
   width: clamp(400px, 100%, 721px);
   animation: fadeIn 0.5s;
 }
@@ -26,7 +37,7 @@ main {
 .menu__header {
   display: block;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   transition: all 0.5s ease-out;
 }
 
@@ -156,6 +167,9 @@ main {
 /* Copyright */
 
 #copyright {
+  position: absolute;
+  left: 50;
+  bottom: 0;
   padding-block: 1%;
   opacity: 0.5;
   font-size: 2rem;
