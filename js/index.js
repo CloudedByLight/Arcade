@@ -30,6 +30,7 @@ function createLaunchContainer() {
 
   // creates section.launch-container and appends it as child of main
   const launchContainerElem = document.createElement("section");
+  document.getElementsByTagName("main")[0].style.gap = "0";
   document.getElementsByTagName("main")[0].appendChild(launchContainerElem);
   launchContainerElem.className = "launch-container";
 
@@ -41,6 +42,7 @@ function createLaunchContainer() {
 
   // adds click event listener to toggler: close launch-container and display menu
   closeTogglerElem.addEventListener("click", () => {
+    document.getElementsByTagName("main")[0].style.gap = "5%";
     launchContainerElem.remove();
     menuElem.style.display = "inline-block";
     copyrightElem.style.display = "inline-block";
