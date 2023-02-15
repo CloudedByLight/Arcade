@@ -10,7 +10,8 @@ body {
 }
 
 main {
-  height: 100%;
+  height: 95%;
+  overflow: hidden;
   position: relative;
   font-family: courier;
   font-size: 7rem;
