@@ -1,6 +1,8 @@
 # Arcade
 A project web application designed for PC devices, containing classic games like Snake, TicTacToe & Pong.
 
+Hosted on: https://ralph-arcade.netlify.app/
+
 Tech Stack: HTML, CSS, Vanilla JS
 
 # Quirks
