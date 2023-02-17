@@ -59,13 +59,11 @@ export default class Ball {
 
     if (rect.bottom >= rectContainer.bottom || rect.top <= rectContainer.top) {
       this.direction.y *= -1;
-      setTimeout(() => {}, 100); // gives it time to bounce back
     }
 
     // if a paddle is hit by the ball, reverses x direction of ball
     if (paddleRects.some((r) => isCollision(r, rect))) {
       this.direction.x *= -1;
-      setTimeout(() => {}, 100); // gives it time to bounce back
     }
   }
 }
