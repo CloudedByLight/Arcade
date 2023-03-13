@@ -1,21 +1,9 @@
 body {
-  width: 100%;
-  height: 100vh;
+  height: 100vh; /* backup */
+  height: 100svh; /* adjusts for small browser UI elements e.g. search bar */
   background: #111;
   color: white;
 }
-
-/* main {
-  height: 95%;
-  position: relative;
-  font-family: courier;
-  font-size: 7rem;
-  text-transform: uppercase;
-  display: grid;
-  grid-template-rows: 1fr min-content;
-  place-items: center;
-  gap: 4%;
-} */
 
 main {
   height: 100%;
