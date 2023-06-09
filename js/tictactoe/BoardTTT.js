@@ -34,15 +34,16 @@ export default class BoardTTT {
 
     if (boardTTT.turnFlag === true) {
       mark.className = "o";
-      mark.innerHTML = "O";
+      mark.innerText = "O";
     } else {
       mark.className = "x";
-      mark.innerHTML = "X";
+      mark.innerText = "X";
     }
 
     // when min 5 chips placed and board isnt full
     if (boardTTT.turnCounter >= 5 && boardTTT.turnCounter <= 9) {
       boardTTT.tttWinner = boardTTT.boardState(boardTTT); // check for winner
+      console.log('boardTTT.tttWinner :>> ', boardTTT.tttWinner);
       if (boardTTT.tttWinner !== false) {
         // winner found:
         clearBoardListeners(boardTTT.boardElem);
@@ -67,30 +68,30 @@ export default class BoardTTT {
     let winner = turnFlag === true ? "O" : "X";
 
     if (
-      (tiles[0].innerHTML === winner &&
-        tiles[1].innerHTML === winner &&
-        tiles[2].innerHTML === winner) ||
-      (tiles[0].innerHTML === winner &&
-        tiles[3].innerHTML === winner &&
-        tiles[6].innerHTML === winner) ||
-      (tiles[0].innerHTML === winner &&
-        tiles[4].innerHTML === winner &&
-        tiles[8].innerHTML === winner) ||
-      (tiles[1].innerHTML === winner &&
-        tiles[4].innerHTML === winner &&
-        tiles[7].innerHTML === winner) ||
-      (tiles[2].innerHTML === winner &&
-        tiles[5].innerHTML === winner &&
-        tiles[8].innerHTML === winner) ||
-      (tiles[2].innerHTML === winner &&
-        tiles[4].innerHTML === winner &&
-        tiles[6].innerHTML === winner) ||
-      (tiles[3].innerHTML === winner &&
-        tiles[4].innerHTML === winner &&
-        tiles[5].innerHTML === winner) ||
-      (tiles[6].innerHTML === winner &&
-        tiles[7].innerHTML === winner &&
-        tiles[8].innerHTML === winner)
+      (tiles[0].innerText === winner &&
+        tiles[1].innerText === winner &&
+        tiles[2].innerText === winner) ||
+      (tiles[0].innerText === winner &&
+        tiles[3].innerText === winner &&
+        tiles[6].innerText === winner) ||
+      (tiles[0].innerText === winner &&
+        tiles[4].innerText === winner &&
+        tiles[8].innerText === winner) ||
+      (tiles[1].innerText === winner &&
+        tiles[4].innerText === winner &&
+        tiles[7].innerText === winner) ||
+      (tiles[2].innerText === winner &&
+        tiles[5].innerText === winner &&
+        tiles[8].innerText === winner) ||
+      (tiles[2].innerText === winner &&
+        tiles[4].innerText === winner &&
+        tiles[6].innerText === winner) ||
+      (tiles[3].innerText === winner &&
+        tiles[4].innerText === winner &&
+        tiles[5].innerText === winner) ||
+      (tiles[6].innerText === winner &&
+        tiles[7].innerText === winner &&
+        tiles[8].innerText === winner)
     ) {
       return winner; // returns winner name
     }
@@ -104,7 +105,7 @@ function showGameResult(resultString) {
   gameResult.className = "game-result";
   const launchContainers = document.getElementsByClassName("launch-container");
   launchContainers[0].appendChild(gameResult);
-  gameResult.innerHTML = resultString;
+  gameResult.innerText = resultString;
 
   let closeTogglers = document.getElementsByClassName("close-toggler");
   closeTogglers[0].style.color = "cyan";
