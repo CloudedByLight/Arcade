@@ -4,7 +4,12 @@ export default class BoardTTT {
     this.boardElem.className = "board board--ttt";
     this.turnFlag = true;
     this.turnCounter = 1;
-    this.tiles = []; // to contain 9 tiles from the DOM
+    this.tiles = []; // to contain 9 tiles elements from the DOM
+    /*
+    For better security than the current code offers, winning conditions should be
+    verified on a seperate tiles array which would contain the tile marks,
+    instead of the DOM frontend tile elements like the one above.
+    */
 
     // creates DOM tiles and pushes them to this.tiles
     for (let i = 0; i < 9; i++) {
@@ -43,7 +48,6 @@ export default class BoardTTT {
     // when min 5 chips placed and board isnt full
     if (boardTTT.turnCounter >= 5 && boardTTT.turnCounter <= 9) {
       boardTTT.tttWinner = boardTTT.boardState(boardTTT); // check for winner
-      console.log('boardTTT.tttWinner :>> ', boardTTT.tttWinner);
       if (boardTTT.tttWinner !== false) {
         // winner found:
         clearBoardListeners(boardTTT.boardElem);
