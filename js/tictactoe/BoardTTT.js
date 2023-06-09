@@ -7,7 +7,7 @@ export default class BoardTTT {
     this.tiles = []; // to contain 9 tiles elements from the DOM
     /*
     For better security than the current code offers, winning conditions should be
-    verified on a seperate tiles array which would contain the tile marks,
+    verified on a seperate tiles array which would contain backend tile marks objs,
     instead of the DOM frontend tile elements like the one above.
     */
 
