@@ -1,5 +1,6 @@
 # Arcade
 A project web application designed for PC devices, containing classic games like Snake, TicTacToe & Pong.
+My app is meant to illustrate deep understanding of HTML, CSS, DOM flow, and front-end JS.
 
 Hosted on: https://ralph-arcade.netlify.app/
 
@@ -14,6 +15,6 @@ Tech Stack: HTML, CSS, Vanilla JS
 # Quirks
 
 The application is contained within a single html file, which dynamically rearranges itself using JS scripts 
-to generate game UIs and functionality. This is meant to illustrate deep understanding of HTML, CSS, DOM flow, and front-end JS.
+to generate game UIs and functionality. 
 
 
