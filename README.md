@@ -14,7 +14,6 @@ Tech Stack: HTML, CSS, Vanilla JS
 # Quirks
 
 The application is contained within a single html file, which dynamically rearranges itself using JS scripts 
-to generate game UIs and functionality. This is meant to illustrate DOM understanding and demonstrate Advanced
-JS use in the form of ES6 classes.
+to generate game UIs and functionality. This is meant to illustrate deep understanding of HTML, CSS, DOM flow, and front-end JS.
 
 
